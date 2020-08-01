@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    text-align: center;
+    background-image: url(img/fundo.png);
+}
+
+/*CABEÇALHO*/
+header{
+    background-color: #ed792c;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ece5db;
+    padding-right: 90px;
+    padding-left: 90px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header div{
+    background-color: #ed792c;
+}
+
+nav{
+    
+    background-color: #ed792c;
+}
+
+nav a :hover{ /*Transição de cores dos links do menu*/
+    color: #174e84;
+    transition-duration: 0.6s;
+    transition-delay: 0.1s;
+}
+
+ul{
+    display: flex;
+    background-color: #ed792c;
+}
+
+li{
+    background-color: #ed792c;
+    list-style: none;
+    margin-right: 35px;
+}
+
+header div img{
+    width: 38px;
+    background-color: #ed792c;
+}
+
+/*Estilização dos textos*/
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+span{
+    color: #174e84;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+input{  /*Estilização dos botões*/
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+    background-color: #ed792c;
+    height: 45px;
+    padding: 8px;
+    border-radius: 8px;
+    border-style: none;
+    color: #ece5db;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*Rodapé*/
+
+footer{
+    background-color: #174e84;
+    padding: 15px;
+    width: 100%;
+}
+
+footer div a img{
+    width: 30px;
+}
+
+/*CLASSES*/
+
+.link_menu{ /*Padronização dos links do menu*/
+    background-color: #ed792c;
+    color: #ece5db;
+    text-decoration: none;
+}
+
+.circulo{ /*Circulos que definem o banner atual*/
+    margin-top: 15px;
+    width: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.color{ /*Cores dos textos*/
+    background-color: transparent;
+    color: #ece5db;
+}
+
+/*Padronização das seções sobre o zoom*/
+
+.info_zoom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 80%;
+    /*padding-right: 100px;*/
+    padding-left: 100px;
+}
+
+.info_zoom div{
+    background-color: #174e84;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-left: 64px;
+}
+
+/*IDs*/
+
+#logo{  /*Tamanho e estilização da logo*/
+    width: 102px;
+    background-color: #ed792c;
+    margin-top: 5px;
+    margin-left: 120px;
+    padding-left: 59px;
+}
+
+#painel{    /*Tamanho e estilização dos banners*/
+    margin-top: 73px;
+    width: 87%;
+    border-radius: 40px;
+}
+
+#box_circle{ /*Posicionamento dos circulos-menu*/
+    text-align: center;
+}
+
+
+#logo_rodape{ /*Estilização da logo no rodapé*/
+    width: 50px;
+    padding-top: 2px;
+}
+
+#sec_responsiva{ /*Ocultação da section presente apenas na versão responsiva*/
+    display: none;
+}
+
+@media screen and (max-width: 500px){   /*Responsividade*/
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    header{ /*Cabeçalho*/
+        flex-direction: column;
+        width: 100%;
+        height: 10%;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    section{ /*Deixa as seções uma embaixo da outra*/
+        flex-direction: column;
+    }
+
+    section div{
+        text-align: center;
+    }
+    
+    /*Estilização dos textos*/
+
+    h2{
+        font-size: 28px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    input{ /*Estilização dos botões*/
+        height: 55px;
+        padding: 11px; 
+        font-size: 18px;
+    }
+
+    /*Rodapé*/
+
+    footer{
+        width: 100%;
+        padding-right: 44%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    footer div{
+        margin-left: 45%;
+    }
+
+    footer div a img{
+        width: 23%;
+    }
+
+    /*IDs*/
+
+    /*Imagens do cabeçalho*/
+
+    #insta{
+        display: none;
+    }
+
+    #logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    #sec_painel{ /*Ocultação do banner*/
+        display: none;
+    }
+
+    /*Revelação da section para responsividade e estilização*/
+
+    #sec_responsiva{ 
+        display: flex;
+    }
+
+    #sec_responsiva div{
+        background-color: #ed792c;
+        margin-bottom: 0;
+    }
+
+    /*Seções com infos do zoom*/
+    .info_zoom{
+        padding: 0;
+        width: 90%;
+        margin-left: 11%;
+        /*margin-top: 3%;*/
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+    
+    .info_zoom div{
+        width: 100%;
+
+    }
+
+    /*Rodapé*/
+
+    #logo_rodape{
+        width: 37%; /* 25%*/
+    }
+    
+}
